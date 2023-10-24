@@ -26,7 +26,3 @@ resource "aws_security_group_rule" "check_sorcery" {
 resource "aws_s3_bucket" "unique" {
   bucket = "unique-bucket-yrg"
 }
-
-resource "aws_s3_bucket" "unique" {
-  bucket = "unique-bucket-were"
-}
