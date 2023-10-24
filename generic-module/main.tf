@@ -21,9 +21,12 @@ resource "aws_security_group_rule" "check_sorcery" {
   to_port = 80
   security_group_id = aws_security_group.unique_sg[0].id
   source_security_group_id = var.check_sorcery_sg
-
 }
 
 resource "aws_s3_bucket" "unique" {
   bucket = "unique-bucket-yrg"
+}
+
+resource "aws_s3_bucket" "unique" {
+  bucket = "unique-bucket-were"
 }
